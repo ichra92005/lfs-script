@@ -55,6 +55,8 @@ ver_kernel()
      return 1; 
    fi
 }
+sudo ln -sf /bin/bash /usr/bin/sh
+sudo apt install texinfo
 
 # Coreutils first because --version-sort needs Coreutils >= 7.0
 ver_check Coreutils      sort     8.1 || bail "Coreutils too old, stop"
