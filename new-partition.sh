@@ -7,7 +7,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Disk to partition
-DISK="/dev/sdb"
+DISK="/dev/sda"
 
 # Check if the disk exists
 if [ ! -b $DISK ]; then
