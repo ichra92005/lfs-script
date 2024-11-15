@@ -6,6 +6,7 @@ ls -l /bin/sh
 sudo - lfs
 cd /mnt/lfs/sources
 tar -xf gcc-13.2.0.tar.xz
+cd gcc-13.2.0
 tar -xf ../mpc-1.3.1.tar.gz && mv -v mpc-1.3.1 mpc
 tar -xf ../gmp-6.3.0.tar.xz && mv -v gmp-6.3.0 gmp
 tar -xf ../mpfr-4.2.1.tar.xz && mv -v mpfr-4.2.1 mpfr
