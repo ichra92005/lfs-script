@@ -1,0 +1,26 @@
+#!/bin/bash
+echo "Starting the LFS build process..."
+run-script() {
+    local script=$1
+    if [ -x "$script" ]; then
+        echo "Running $script..."
+        $script
+        if [ $? -ne 0 ]; then
+            echo "ERROR: $script failed. Exiting."
+            exit 1
+        fi
+    else
+        echo "ERROR: $script is not executable or not found."
+        exit 1
+    fi
+}
+
+
+run-script "./version-check.sh"
+
+
+
+echo "Running additional commands..."
+
+
+
