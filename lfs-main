@@ -16,7 +16,7 @@ run-script() {
 }
 
 
-run-script "./version-check.sh"
+run-script "./script/version-check.sh"
 
 
 
