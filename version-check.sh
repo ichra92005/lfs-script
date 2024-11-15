@@ -35,7 +35,7 @@ ver_check() {
     else
         printf "ERROR: %-9s is TOO OLD ($3 or later required)\n" "$1"
         echo "Attempting to install $1..."
-        sudo apt-get update && sudo apt-get install -y $1
+        sudo apt-get update && sudo apt-get install -y $2
         if [ $? -ne 0 ]; then
             echo "ERROR: Failed to install $1."
             return 1
