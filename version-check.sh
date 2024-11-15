@@ -19,7 +19,7 @@ ver_check() {
     then
         echo "ERROR: Cannot find $2 ($1)"
         echo "Attempting to install $1..."
-        sudo apt-get update && sudo apt-get install -y $1
+        sudo apt-get update && sudo apt-get install -y $2
         if [ $? -ne 0 ]; then
             echo "ERROR: Failed to install $1."
             return 1
